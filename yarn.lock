@@ -5200,10 +5200,9 @@ react-is@^17.0.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
 
-react-native-track-player@^4.1.1:
+"react-native-track-player@github:5-stones/react-native-track-player#fix/web-vite-dist":
   version "4.1.1"
-  resolved "https://registry.yarnpkg.com/react-native-track-player/-/react-native-track-player-4.1.1.tgz#96f8688f270c5a01bc597b6331843b191402502b"
-  integrity sha512-E5N/eK/+HtAVJUAzXpm1cWz8ROheV9jb0TI6h2bM+333U+DWibTTnT2T1122FkCoXLXIYavtm2FR2if+5jH8cA==
+  resolved "https://codeload.github.com/5-stones/react-native-track-player/tar.gz/0a5c98f01610d02d2c9913ec8cc3ec1f59931da5"
 
 react-native-web@~0.19.6:
   version "0.19.10"
