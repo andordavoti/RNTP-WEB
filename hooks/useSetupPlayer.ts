@@ -9,7 +9,7 @@ export const useSetupPlayer = () => {
   useEffect(() => {
     let unmounted = false;
 
-    (async () => {
+    async function run () {
       await setupPlaybackService();
       if (unmounted) return;
       setPlayerReady(true);
@@ -18,7 +18,16 @@ export const useSetupPlayer = () => {
       if (queue.length <= 0) {
         await TrackPlayer.add(playlistData as Track[]);
       }
-    })();
+    }
+
+    run()
+      .then(() => {
+        alert('>>>>>>>>>>>>> Working! <<<<<<<<<<<<<');
+      })
+      .catch(err => {
+        console.error(err);
+        alert('>>>>>>>>>>>>> Broken! <<<<<<<<<<<<<');
+      });
 
     return () => {
       unmounted = true;
